@@ -1,0 +1,208 @@
+﻿<%@  Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="zxx">
+
+<head>
+	<title>Blissful Wedding Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
+
+	<!--meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Blissful Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
+	<!--//meta tags ends here-->
+
+	<!--booststrap-->
+	
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<!--//booststrap end-->
+	
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	
+	<!-- banner text slider-->
+
+	<!--// banner text slider-->
+	
+	<!--jquery-css counter time-->
+		<link rel="stylesheet" href="css/jquery.countdown.css" />
+	<!--//jquery-css counter time-->
+	
+	<!--lightbox slider-->
+    <link rel="stylesheet" href="css/lightbox.css">  
+   <!-- lightbox slider-->
+
+	<!--stylesheets-->
+	<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+	<!--//stylesheets-->
+	<link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="banner">
+
+<div class="header-w3layouts"> 
+		<!-- Navigation -->
+	
+		<div class="container">
+		<div class="header-bar"> 
+	<nav class="navbar navbar-default">
+			<div class="navbar-header navbar-left">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				<h1><a class="navbar-brand" href="index.html">BLI<span>SS</span>FUL</a></h1>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+				<nav>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="home.aspx">Home</a></li>
+						<li><a href="login/Default.aspx" class="external">Admin</a></li>
+						<li><a href="#services" class="external">User</a></li>
+						<li><a href="#gallery" class="external">Gallery</a></li>
+						
+						<li><a href="#contact" class="external">Contact</a></li>
+					</ul>
+				</nav>
+
+
+          
+	</div>
+		</nav> 
+	</div>
+
+	<div class="clearfix"> </div>
+
+	</div>
+	
+	</div>
+<div class="container">
+
+		<!--Slider-->
+		<div class="slider">
+			<div class="callbacks_container w3l">
+				<ul class="rslides" id="slider">
+					<li>
+					
+						<div class="slider-info">
+							<h4>Happy Couples For Ever</h4>
+						    <p>Hall Booking and Photo graphy to everything in one sight,</p>
+							
+						</div>
+					</li>
+					<li>
+						
+						<div class="slider-info">
+							<h4>The Best Day In Our Lives </h4>
+							<p>The Best Stage Decoration specialist are available.</p>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="clearfix"></div>
+			
+</div>
+
+	</div>
+	</div>
+<!--//banner-->
+	<!--counter-->
+	<div>
+	<asp:ContentPlaceHolder ID="content1" runat ="server" >
+	
+	
+	
+	
+	</asp:ContentPlaceHolder>
+	
+	</div>
+				<footer>
+				<p>  &copy;  Wedding planner Association. All Rights Reserved | Design by  </a></p>
+	</footer>
+
+
+	<!--js working-->
+	<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- //js  working-->
+
+			<!--  light box js -->
+		<script src="js/lightbox-plus-jquery.min.js"> </script> 
+		<!-- //light box js--> 
+		<!-- banner-->
+<script src="js/responsiveslides.min.js"></script>
+		<script>
+				$(function () {
+					$("#slider").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: true,
+						speed: 1000,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});
+				});
+			</script>
+<!--// banner-->
+	<!--scripts-->
+	<script src="js/jquery.countdown.js"></script>
+	<!--countdowntimer-js-->
+	<script src="js/script.js"></script>
+	<!--countdowntimer-js-->
+	<!--//scripts-->
+	
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>
+
+</html>
